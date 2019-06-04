@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <chen.vike.c680.views.CircleImageView
+            android:id="@+id/iv_me"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/touxiang_message" />
+        <com.daasuu.bl.BubbleLayout
+            android:id="@+id/other_bubbleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            app:bl_arrowDirection="left"
+            app:bl_arrowHeight="8dp"
+            app:bl_arrowPosition="8dp"
+            app:bl_arrowWidth="5dp"
+            app:bl_cornersRadius="10dp"
+            app:bl_strokeWidth="1px"
+            >
+            <TextView
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:textIsSelectable="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000" />
+        </com.daasuu.bl.BubbleLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <chen.vike.c680.views.CircleImageView
+            android:id="@+id/iv_you"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/touxiang_message" />
+
+        <com.daasuu.bl.BubbleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            app:bl_arrowDirection="right"
+            app:bl_arrowHeight="8dp"
+            app:bl_arrowPosition="8dp"
+            app:bl_arrowWidth="5dp"
+            app:bl_cornersRadius="10dp"
+            app:bl_strokeWidth="1px"
+            app:bl_bubbleColor="#9eea6a"
+            android:src="#82d900"
+            android:id="@+id/bubbleLayout"
+            android:layout_toLeftOf="@id/iv_you"
+            >
+        <TextView
+            android:id="@+id/you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_you"
+            android:layout_toLeftOf="@id/iv_you"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:textIsSelectable="true"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:textColor="#000" />
+</com.daasuu.bl.BubbleLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

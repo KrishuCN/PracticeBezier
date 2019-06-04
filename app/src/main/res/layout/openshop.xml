@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/padding5">
+
+    <TextView
+        android:id="@+id/open_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xiugai_dianpu_jineng_btn_bg"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:maxLength="5"
+        android:text="名片设计"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/open_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_font_6"
+        android:textColor="@color/header_normal"/>
+</LinearLayout>

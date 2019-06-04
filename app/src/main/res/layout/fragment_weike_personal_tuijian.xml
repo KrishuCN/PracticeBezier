@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+  <LinearLayout
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:layout_marginBottom="20dp"
+      android:orientation="horizontal">
+    <Button
+        android:id="@+id/person_tuisong_xiangmu"
+        android:layout_width="91dp"
+        android:layout_height="35dp"
+        android:textColor="#c8b4ff"
+        android:text="推荐项目"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/person_button_t_style" />
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:src="@mipmap/lingxng"/>
+      <Button
+          android:id="@+id/person_tuisong_fuwu"
+          android:layout_width="91dp"
+          android:layout_height="35dp"
+          android:text="推荐服务"
+          android:textSize="15sp"
+          android:textColor="#ffffff"
+          android:layout_marginLeft="5dp"
+          android:background="@drawable/person_button_press_style" />
+
+  </LinearLayout>
+</LinearLayout>

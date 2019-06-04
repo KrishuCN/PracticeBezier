@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/zhifubao_zhifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/padding10">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_alipay" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:drawableRight="@mipmap/right"
+            android:text="支付宝" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/wxzf_zhifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/padding10"
+        >
+
+        <ImageView
+            android:id="@+id/WeCha_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_appwx" />
+
+        <TextView
+            android:id="@+id/WeCha_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/WeCha_logo"
+            android:drawableRight="@mipmap/right"
+            android:text="微信支付" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/yezf_zhifu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/padding10"
+            android:background="@drawable/border_radius"
+            >
+
+            <ImageView
+                android:id="@+id/sjcf_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_sjcf" />
+
+            <TextView
+                android:id="@+id/fk_ye_num_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sjcf_logo"
+                android:drawableRight="@mipmap/right"
+                android:text="余额" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

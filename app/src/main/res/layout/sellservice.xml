@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width70"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_service"
+                android:textColor="@color/header_normal"
+                android:textSize="@dimen/text_font_4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/fengexian" />
+
+        <TextView
+            android:id="@+id/sell_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="@dimen/padding10"
+            android:drawableRight="@mipmap/icon_26"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding16"
+            android:text="@string/sell_lb"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/selllinear_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width20"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/sell_text_category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sell_catroy"
+                android:textSize="@dimen/text_font_6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_xg1"
+                android:textSize="@dimen/text_font_6" />
+
+            <TextView
+                android:id="@+id/sell_text_category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sell_catroy"
+                android:textSize="@dimen/text_font_6" />
+
+            <TextView
+                android:id="@+id/sell_text_category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_xg"
+                android:textColor="@color/sidebar_text_color"
+                android:textSize="@dimen/text_font_6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_title"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/height1"
+                android:layout_height="@dimen/height32"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width10">
+
+                <EditText
+                    android:id="@+id/sell_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/sell_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="#E1E1E1"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_moneny"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/height1"
+                android:layout_height="@dimen/height32"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/width10">
+
+                <EditText
+                    android:id="@+id/sell_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="1234567890."
+                    android:hint="@string/sell_hintmon"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="#E1E1E1"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinner_sprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height80"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width20">
+
+            <ImageView
+                android:id="@+id/sell_imgw"
+                android:layout_width="@dimen/height60"
+                android:layout_height="@dimen/height60"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="@dimen/width10"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/sell_img"
+                android:layout_width="@dimen/height60"
+                android:layout_height="@dimen/height60"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/fa_ser_img" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/width20"
+            android:paddingRight="@dimen/width20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_sall"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:layout_weight="0.5"
+                android:background="#fff"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:id="@+id/sell_numtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/text_font_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_num"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height160"
+            android:paddingLeft="@dimen/width10"
+            android:paddingRight="@dimen/width10">
+
+            <LinearLayout
+                android:id="@+id/linear_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/password_linear"
+                android:padding="@dimen/width10">
+
+                <EditText
+                    android:id="@+id/sell_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:hint="@string/sell_hinte"
+                    android:maxLength="300"
+                    android:maxLines="7"
+                    android:textColorHint="@color/section_text_color"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sell_commit"
+                style="@style/CustomTextButton"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="@string/sell_commit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

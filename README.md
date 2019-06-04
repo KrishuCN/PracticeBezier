@@ -1,2 +1,7 @@
-# PracticeBezier
-练习二阶贝塞尔曲线
+## 二次贝塞尔曲线
+ 练习二阶贝塞尔曲线
+ 
+ [原项目地址](https://github.com/pengMaster/Bezier#二次贝塞尔曲线)
+ 
+![效果图](https://camo.githubusercontent.com/662623e9c03e8084cf3d4fabaf9dcebf4280a977/68747470733a2f2f7773322e73696e61696d672e636e2f6c617267652f303036744b6654636c793166677737666761366e6b673330617930683237697a2e676966)
+

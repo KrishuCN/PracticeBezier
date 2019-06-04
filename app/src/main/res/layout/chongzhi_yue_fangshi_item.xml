@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/zffs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:text="@string/fk_xztgfs"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_6" />
+
+
+        <RelativeLayout
+            android:id="@+id/zfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/padding10"
+            android:background="@drawable/border_radius"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_alipay" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:drawableRight="@mipmap/right"
+                android:text="支付宝"
+                android:textColor="@color/colorInfo" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/wxzf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/padding10"
+            android:background="@drawable/border_radius"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10">
+
+            <ImageView
+                android:id="@+id/WeCha_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_appwx" />
+
+            <TextView
+                android:id="@+id/WeCha_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/WeCha_logo"
+                android:drawableRight="@mipmap/right"
+                android:text="微信支付"
+                android:textColor="@color/colorInfo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="* 500元以下可以微信支付，500以上暂不支持微信支付，请使用支付宝支，谢谢你的支持与谅解."
+            android:textColor="@color/colorTextButton1"
+            android:textSize="@dimen/text_font_4"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

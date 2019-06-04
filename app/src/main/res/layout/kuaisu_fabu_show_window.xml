@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line2"/>
+    <chen.vike.c680.views.MyGridView
+        android:id="@+id/kuaisu_fabu_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <chen.vike.c680.views.MyGridView
+        android:id="@+id/kuaisu_fabu_jiage_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+ <Button
+     android:id="@+id/kuaisu_btn_queren"
+     android:layout_width="70dp"
+     android:layout_height="25dp"
+     android:layout_gravity="center_horizontal"
+     android:textColor="@color/white"
+     android:background="@drawable/btn_demand_bg"
+     android:layout_marginBottom="15dp"
+     android:layout_marginTop="15dp"
+     style="?android:attr/borderlessButtonStyle"
+     android:text="确认"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line2"/>
+</LinearLayout>

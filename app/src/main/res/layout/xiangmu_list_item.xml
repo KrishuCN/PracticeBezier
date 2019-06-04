@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin5"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingTop="@dimen/padding16">
+
+        <chen.vike.c680.views.CircleImageView
+            android:id="@+id/fb_logo"
+            android:layout_width="@dimen/width25"
+            android:layout_height="@dimen/height25"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/cy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_font_0"
+            tools:text="123" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/padding5"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingTop="@dimen/padding5"
+        android:textColor="@color/colorInfo"
+        android:textSize="@dimen/text_font_6"
+        tools:text="广东名达集团logo及VI简单设计" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16">
+
+
+        <TextView
+            android:id="@+id/xm_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="悬赏："
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_2" />
+
+        <TextView
+            android:id="@+id/now_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin2"
+            android:gravity="center"
+            android:text="￥200元"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/text_font_6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:background="@drawable/test"
+            android:textColor="@color/text_color_9"
+            android:textSize="@dimen/text_font_0"
+            tools:text="已托管" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/margin16"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding5"
+        android:paddingTop="@dimen/padding5"
+        android:weightSum="0.3">
+
+        <chen.vike.c680.views.CustomDigitalClockStar
+            android:id="@+id/timeStar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:textSize="@dimen/text_font_2" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/bs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:text="3人投标"
+            android:textSize="@dimen/text_font_2" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <chen.vike.c680.views.CustomDigitalClockEnd1
+            android:id="@+id/timeEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:textSize="@dimen/text_font_2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="@color/line" />
+
+</LinearLayout>

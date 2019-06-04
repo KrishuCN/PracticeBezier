@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lht.vike.a680_v1">
+
+    <!--环信权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--shareSDK权限-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--支付宝权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--Android O 上安装位置来源应用权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+    <application
+        android:name="chen.vike.c680.main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:maxAspectRatio="2.4"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="InnerclassSeparator,UnusedAttribute">
+
+        <!--适配9.0 Apache-http -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--适配华为（huawei）刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!--适配小米（xiaomi）刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ktGw2m24mQdpZRsOZKIYthzGU2fbR3wM" />
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="c6f411b959" />
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="b24fb1b4e4" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="TestIn" />
+
+        <!-- 您从百度网站获取的APP KEY，根据实际您的APP申请的APP_KEY进行修改 -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="c6f411b959" /> <!-- abcd1234 -->
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START     -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，    默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <activity
+            android:name="chen.vike.c680.main.MainActivity"
+            android:launchMode="singleTask"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity
+            android:name="chen.vike.c680.main.Splash"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.vikecn.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="chen.vike.c680.tools.BaseStatusBarActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.main.GuidePage"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.tools.ZhuanLan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ForgetActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ShiMingRenZhengActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.SheZhiActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.RegisterOneActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.RegisterTwoActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ChangePasswordActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PickPhotoActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.TuKuShowImageActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.EmailActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MobileYanZhengActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.webview.WebViewActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.DemandFaBuActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.RechargeActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.VerificationActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.BankActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ReffectActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cydxm_XuanShangActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ParticipateProjectActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cydxm_ZhaoBiaoActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cydxm_GuYongActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cydxm_JiJianActivity"
+            tools:ignore="InnerclassSeparator" />
+        <!--设置edittext不自动获得焦点-->
+        <activity
+            android:name="chen.vike.c680.activity.OpenShopActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ImmediateGyActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.SellServicesActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.FaBuXuQiuActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MessageChatActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cy_XsActivity"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.Cy_ZbActivity"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.OpenShopSkillsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MyServiceActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.GeRenZhongXinShopDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ReviewImageActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ServiceDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.FuKuanAfterActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.FuKuanActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.OrderDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.TaskDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.AllPlanActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PlanListActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PlanDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PriceMakUpActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.BuyServiceActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.CaseDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MyCollectionActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.CatoryActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.AlertServiceActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeVipCenterActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeBuyVipActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeServiceProvideractivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeRenewVipActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeMyVipRecordActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeHotXiangMuActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MessageSystemListActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.MessageSearchActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ConfirmPayActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PayMessageActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PayDepositActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.InstallmentSettingActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.InstallmentActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.InstallmentDetailsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.TenderBidActivity"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity android:name="chen.vike.c680.activity.VipMoreProjectActivity" />
+        <activity android:name="chen.vike.c680.activity.VipExclusiveActivity" />
+        <activity android:name="chen.vike.c680.activity.VipGoodActivity" />
+        <activity android:name="chen.vike.c680.activity.VipMoreActivity" />
+
+        <activity android:name="chen.vike.c680.activity.WeiKeProjectClassActivity" />
+        <activity
+            android:name="chen.vike.c680.activity.FaBuActicity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="chen.vike.c680.activity.FaPiaoActivity" />
+        <activity
+            android:name="chen.vike.c680.activity.ShopDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="chen.vike.c680.webview.WebActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name="chen.vike.c680.activity.PersonDingDanActivity" />
+        <activity android:name="chen.vike.c680.activity.PersonInvoiceManageAvtivity" />
+        <activity android:name="chen.vike.c680.activity.PersonCaiFuActivity" />
+        <activity android:name="chen.vike.c680.activity.PersonShouRuActivity" />
+        <activity android:name="chen.vike.c680.activity.PersonFaPaioEditActivity" />
+        <activity android:name="chen.vike.c680.activity.UserLoginActivity" />
+        <activity android:name="chen.vike.c680.activity.PersonXiaoXiActivity" />
+        <activity android:name="chen.vike.c680.activity.FaXianZhiFuActivity" />
+        <activity android:name="chen.vike.c680.activity.FaXianXiangQActivity" />
+        <activity
+            android:name="chen.vike.c680.activity.WeiKeFabuTimeServiceActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.PersonUpdateZuoPinActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden" />
+        <activity android:name="chen.vike.c680.activity.PersonPlusImageActivity" />
+        <activity
+            android:name="chen.vike.c680.activity.PersonChangZuoPinActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden" />
+        <activity
+            android:name="chen.vike.c680.activity.FaBuDemandActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden" />
+
+        <activity android:name="chen.vike.c680.activity.PersonDaoJuActivity" />
+        <activity
+            android:name="chen.vike.c680.activity.GRZXWeiTiXianActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.webview.WebNoTitleActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="chen.vike.c680.activity.ChangeShopActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden" />
+        <activity
+            android:name="chen.vike.c680.activity.ChangeShopNameActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified|stateHidden" />
+        <activity android:name="chen.vike.c680.activity.PersonMyFaBuXuQiuActivity" />
+
+        <!--上传页面统计数据的服务-->
+        <service android:name="chen.vike.c680.service.UploadService" />
+        <activity android:name="chen.vike.c680.activity.FaBuHouActivity" />
+        <!--解决7.0照相机崩溃问题-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--微信支付接入-->
+        <activity
+            android:name="chen.vike.c680.WXPay.WXApi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <receiver
+            android:name="chen.vike.c680.WXPay.AppRegister"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!--shareSDK分享回调-->
+        <!--  android:screenOrientation="portrait" -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent1104867170" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--支付宝配置-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+
+        <!--环信配置-->
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1196170302178697#sjcfwk" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"
+            tools:ignore="ExportedService" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

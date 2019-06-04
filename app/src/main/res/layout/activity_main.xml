@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--隐藏状态栏，用来控制布局不被上顶-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="invisible"/>-->
+
+    <chen.vike.c680.views.NoScrollViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RadioGroup
+            android:id="@+id/guzhu_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/guzhu_rb"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableTop="@drawable/guzhu1"
+                android:text="雇主" />
+
+            <RadioButton
+                android:id="@+id/fuwushang_rb"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/fuwushang1"
+                android:text="服务商" />
+
+            <TextView
+                android:id="@+id/fabu_rb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/fabu_button"
+                android:gravity="center|bottom"
+                android:paddingBottom="@dimen/padding5"
+                android:text="发布"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_font_0" />
+
+            <RadioButton
+                android:id="@+id/xiaoxi_rb"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/xiaoxi1"
+                android:text="作品" />
+
+            <RadioButton
+                android:id="@+id/wode_rb"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/wode1"
+                android:text="我的" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_yuandian"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="115dp"
+            android:background="@drawable/yuan"
+            android:gravity="center"
+            android:text="99+"
+            android:textColor="@android:color/white"
+            android:textSize="8sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

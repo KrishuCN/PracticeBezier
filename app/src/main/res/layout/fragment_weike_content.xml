@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <chen.vike.c680.views.RollHeaderView
+        android:id="@+id/weike_lunbo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <include layout="@layout/fragment_weike_content_vip_head"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f1f1f1" />
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_marginLeft="10dp"
+      android:id="@+id/weike_project_class"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"/>
+   <include layout="@layout/weike_page_two_head_item"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/zuixindongtai"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="20dp">
+    <chen.vike.c680.views.WeiKeVerticalBannerView
+        android:id="@+id/weike_new_content_banner"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:animDuration="200"
+        app:gap="2000"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            >
+        <chen.vike.c680.views.WeiKeVerticalBannerView
+            android:id="@+id/weike_new_content_banner2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:animDuration="200"
+            app:gap="2000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_jiaru_vip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/img_jiaru_vip"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="@color/line" />-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginLeft="12dp"
+           android:src="@mipmap/paihang"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="收入排行"
+           android:textSize="15sp"
+           android:textColor="#f54a33"
+           android:layout_marginLeft="10dp"
+           android:layout_gravity="center"/>
+   </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e7e7e7" />
+    <include layout="@layout/shouru_paihang_item_two"
+        ></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/zuixinruzhu"
+           android:layout_marginLeft="12dp"
+           android:layout_marginTop="12dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:textColor="#f54a33"
+           android:layout_marginLeft="10dp"
+           android:layout_gravity="bottom"
+           android:text="最新入驻服务商"/>
+   </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/weike_fuwu_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/weike_woyaoruzhu_btn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/woyaoruzhu"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+    <include layout="@layout/weike_page_xuqiu_item"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="项目推荐"
+                android:textColor="#303030"
+                android:textSize="@dimen/text_medium_size" />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="#e7e7e7" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/weike_hyh"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/huanyihuan1" />
+
+
+    </RelativeLayout>
+
+   <include layout="@layout/weike_page_ruzhu_item"></include>
+</LinearLayout>

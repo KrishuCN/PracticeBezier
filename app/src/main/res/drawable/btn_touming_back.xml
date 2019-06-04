@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!--定义填充渐变颜色-->
+    <gradient
+        android:startColor="#20ffffff"
+        android:endColor="#20ffffff"
+        android:angle="45"/>
+    <!--设置内填充-->
+    <padding android:left="5dp"
+        android:top="0dp"
+        android:right="5dp"
+        android:bottom="1dp"/>
+    <stroke
+        android:width="0.5dp"
+        android:color="#ffffff" />
+    <!--设置圆角矩形-->
+    <corners android:radius="20dip"/>
+</shape>

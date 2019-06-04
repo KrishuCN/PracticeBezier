@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--加这两个属性有很奇葩的一幕-->
+    <!--app:tabGravity="center"-->
+    <!--app:tabMode="scrollable"-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_cyd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#df231b"
+        app:tabSelectedTextColor="#c90000">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进行中" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成" />
+
+
+
+    </android.support.design.widget.TabLayout>
+
+
+    <chen.vike.c680.views.EmptySwipeRefreshLayout
+        android:id="@+id/cyd_list_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <chen.vike.c680.views.MyListView2
+                android:id="@+id/cyd_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@color/line2"
+                android:dividerHeight="0.1dp"
+                android:scrollbars="none" />
+        </FrameLayout>
+
+
+    </chen.vike.c680.views.EmptySwipeRefreshLayout>
+
+
+</LinearLayout>

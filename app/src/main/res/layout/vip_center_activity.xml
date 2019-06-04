@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fengexian">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/vip_backroud">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height20">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center">
+
+                        <chen.vike.c680.views.CircleImageView
+                            android:id="@+id/imagview_vip"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/logo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vip_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="灭绝师太"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_8" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/vip_imag"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width5"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_grad"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_6" />
+
+                        <TextView
+                            android:id="@+id/vip_grad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="皇冠VIP"
+                            android:textColor="@color/vip_red"
+                            android:textSize="@dimen/text_font_6"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/vip_grad1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂无"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vip_join"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_add_vip"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_6" />
+
+                        <TextView
+                            android:id="@+id/vip_timedate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-5-12到期"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_6"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/vip_rennew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vip_rennew"
+                            android:textColor="@color/vip_hui"
+                            android:textSize="@dimen/text_font_6"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_tishivip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_tishi1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_font_3" />
+
+                <TextView
+                    android:id="@+id/vip_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_tishi2"
+                    android:textColor="@color/vip_red"
+                    android:textSize="@dimen/text_font_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_tishi3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_font_3" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height10" />
+
+        <LinearLayout
+            android:id="@+id/vip_jilu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/height20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_sell_record"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.44"
+                android:alpha="0.6"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_sell_see"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.06"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/icon_26" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height10"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:id="@+id/linearcenter1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/height20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_recommend"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:alpha="0.6"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_recommend1"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linrar_listview1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height20"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/vip_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.6"
+                android:background="@color/vip_hui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearcenter2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/height20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_hight"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:alpha="0.6"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_hight1"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linrar_listview2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height20"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/vip_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.6"
+                android:background="@color/vip_hui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearcenter3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width50"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin20"
+            android:paddingRight="@dimen/height20"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_city_vide"
+                    android:textSize="@dimen/text_font_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:alpha="0.6"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vip_city_vide1"
+                    android:textSize="@dimen/text_font_4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linrar_listview3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/height20"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/vip_listview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.6"
+                android:background="@color/vip_hui" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width20"
+            android:background="@color/white" />
+    </LinearLayout>
+</ScrollView>

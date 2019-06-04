@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vip_table_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:saveEnabled="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/rmxm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginLeft="3dp"
+            android:text="LOGO征集启事"
+            android:textColor="@color/colorInfo"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/rmxm_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="LOGO征集启事,具体事项如下。。暗示法撒旦发送到撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法"
+            android:textColor="@color/text_color_1"
+            android:textSize="12sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/type_weike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="悬赏"
+                android:textColor="@color/text_color_1"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/money_weike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/type_weike"
+                android:layout_toRightOf="@id/type_weike"
+                android:text="￥5000"
+                android:textColor="@color/text_color_2"
+                android:textSize="12sp" />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_alignParentRight="true">
+      <TextView
+          android:id="@+id/bb"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="5dp"
+          android:gravity="bottom"
+          android:text="剩余时间："
+          android:textSize="12sp" />
+            <TextView
+                android:id="@+id/time_weike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:text="XX天XX时"
+                android:textColor="@color/text_color_1"
+                android:textSize="12sp" />
+
+
+
+  </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16px"
+        android:background="#f5f5f5"/>
+
+
+</LinearLayout>

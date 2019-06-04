@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/hide_zhuangtailan"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@mipmap/jianbianse_bac">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="更多项目"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/jiazai_shibai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@mipmap/no"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="暂无项目"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/xianshi_xiangmu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_dingzhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--android:divider="#f1f1f1"-->
+            <!--android:dividerHeight="10dp"-->
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <chen.vike.c680.views.MyListView2
+            android:id="@+id/list_dingzhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+    </FrameLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

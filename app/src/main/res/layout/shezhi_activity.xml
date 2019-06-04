@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!--<include layout="@layout/hide_zhuangtailan"></include>-->
+
+    <!--android:layout_marginTop="55dp"-->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#efefef"
+        android:dividerHeight="1dp"/>
+     <include layout="@layout/layout_gguu_item_page"/>
+    <Button
+        android:id="@+id/btn_gguu_show"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/bt"
+        style="@style/CustomTextButton"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
+        android:text="退出登录"/>
+
+
+
+
+
+</LinearLayout>

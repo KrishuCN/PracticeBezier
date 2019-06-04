@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height48"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/tab1"
+            style="@style/CustomRadioButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/search_qb"
+            android:textSize="@dimen/text_font_4" />
+
+        <RadioButton
+            android:id="@+id/tab2"
+            style="@style/CustomRadioButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/search_xs"
+
+            android:textSize="@dimen/text_font_4" />
+
+        <RadioButton
+            android:id="@+id/tab3"
+            style="@style/CustomRadioButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/search_zb"
+
+            android:textSize="@dimen/text_font_4" />
+
+        <RadioButton
+            android:id="@+id/tab4"
+            style="@style/CustomRadioButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/search_jj"
+            android:textSize="@dimen/text_font_4" />
+
+    </RadioGroup>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <include
+        android:id="@+id/view_no"
+        layout="@layout/view_no"></include>
+</LinearLayout>

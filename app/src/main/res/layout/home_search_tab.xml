@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f53633"
+    android:orientation="horizontal">
+
+
+
+    <ImageView
+        android:id="@+id/guzhu_tab_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/wenhao" />
+
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/sousuokuang"
+        android:drawableLeft="@mipmap/guzhu_sousuo"
+        android:gravity="center"
+        android:text="请输入服务/服务商名称"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/text_font_1" />
+
+
+    <TextView
+        android:id="@+id/guzhu_tab_faxiangmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="16dp"
+        android:text="发项目"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

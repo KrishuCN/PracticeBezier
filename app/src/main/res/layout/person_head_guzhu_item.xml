@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/person_head_guzhu">
+    <LinearLayout
+        android:id="@+id/person_back_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/person_two_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+                <LinearLayout
+                    android:id="@+id/btn_my_is_fuwushang"
+                    android:layout_width="106dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/person_fuwu_setting"
+                    android:layout_toStartOf="@+id/person_fuwu_setting"
+                    android:layout_marginRight="15dp">
+                <Button
+                    android:id="@+id/my_is_fuwushang"
+                    android:layout_width="106dp"
+                    android:layout_height="20dp"
+                    android:textColor="@color/white"
+                    android:background="@mipmap/person_guzhu_qiehuan"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:layout_gravity="center_vertical"
+                    />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/person_fuwu_setting"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/shezhi" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/lin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <chen.vike.c680.views.CircleImageView
+                    android:id="@+id/iv_login"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="centerCrop"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp">
+
+
+                    <TextView
+                        android:id="@+id/head_guzhu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/head_guzhu_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignLeft="@id/head_guzhu_name"
+                        android:layout_below="@id/head_guzhu_name"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="余额："
+                        android:textColor="@color/white"
+                         />
+
+                    <Button
+                        android:id="@+id/grzx_cz"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@id/head_guzhu_yue"
+                        android:layout_marginLeft="28dp"
+                        android:layout_toRightOf="@id/head_guzhu_yue"
+                        android:background="@drawable/person_head_btn_top_style"
+                        android:text="充值"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+
+                    <Button
+                        android:id="@+id/grzx_tx"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@id/grzx_cz"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/grzx_cz"
+                        android:text="提现"
+                        android:textColor="@color/white"
+                        android:background="@drawable/person_head_btn_top_style"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

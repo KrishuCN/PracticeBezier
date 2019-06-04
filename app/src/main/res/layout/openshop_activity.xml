@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height60"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_leix"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.76"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/checkBox1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:checked="true"
+                        android:text="@string/shop_personal"
+                        android:textSize="@dimen/text_font_3"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/checkBoxg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="@string/shop_enterpr_gone"
+                        android:textSize="@dimen/text_font_3"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/checkBox2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="@string/shop_enterprise"
+                        android:textSize="@dimen/text_font_3"></RadioButton>
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_name"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.76"
+                android:background="@drawable/password_linear"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/padding20">
+
+                <EditText
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height220"
+            android:orientation="vertical"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:paddingTop="@dimen/padding10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_describe"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:padding="@dimen/padding5"
+                android:paddingRight="@dimen/padding10">
+
+                <LinearLayout
+                    android:id="@+id/foucuse_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/password_linear"
+                    android:padding="@dimen/padding8">
+
+                    <EditText
+                        android:id="@+id/shop_describle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:hint="@string/sell_hinte"
+                        android:maxLines="6"
+                        android:textColorHint="@color/section_text_color"
+                        android:textSize="@dimen/text_font_6" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_skillselect"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/open_shop_skill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.76"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92"
+                    android:alpha="0.5"
+                    android:gravity="center|right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shop_skill"
+                        android:textColor="@color/section_text_color"
+                        android:textSize="@dimen/text_font_6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/icon_26"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_linrar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/shop_na"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_shop_sk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height100"
+            android:padding="@dimen/padding5"
+            android:visibility="gone">
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="@dimen/width10"
+                android:numColumns="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_phone"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.76"
+                android:background="@drawable/password_linear"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin10"
+                android:paddingRight="@dimen/padding20">
+
+                <EditText
+                    android:id="@+id/shop_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:background="@drawable/password_linear"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_addrees"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/open_shop_addrees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border_radius_all"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding16">
+
+                    <Spinner
+                        android:id="@+id/province_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:dropDownVerticalOffset="20dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border_radius_all"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding8"
+                    android:paddingRight="@dimen/padding8">
+
+                    <Spinner
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:spinnerMode="dropdown"
+                        android:dropDownVerticalOffset="20dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/shop_nowBut"
+                style="@style/CustomTextButton"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="@string/shop_nowshop" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

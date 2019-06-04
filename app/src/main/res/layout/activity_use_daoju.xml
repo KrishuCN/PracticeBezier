@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/line"/>
+
+    <chen.vike.c680.views.EmptySwipeRefreshLayout
+        android:id="@+id/use_daoju_list_swipe"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <chen.vike.c680.views.MyListView2
+                android:id="@+id/use_daoju_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@color/line2"
+                android:dividerHeight="0.1dp"
+                android:scrollbars="none" />
+        </FrameLayout>
+
+
+    </chen.vike.c680.views.EmptySwipeRefreshLayout>
+
+</RelativeLayout>

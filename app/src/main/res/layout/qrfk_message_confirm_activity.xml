@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您确定现在支付中标金给中标威客了吗？"
+            android:textSize="18sp"
+            android:textColor="#2b2b2b"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在确认支付前您需要注意以下几点："
+            android:textSize="14sp"
+            android:layout_marginTop="33dp"
+            android:textColor="#2b2b2b"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、确认中标威客已经完成所有工作；"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、已经收到中标威客提供的源文件且能正常使用；"
+            android:textSize="14sp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3、如果操作失败，请在2小时内通知在线客服；"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4、如您现在不确定支付，您可以以后继续操作此步骤；"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"
+            android:layout_marginTop="8dp"/>
+
+        
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginTop="4dp"
+        android:background="#e4e4e4"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过手机验证"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#2b2b2b"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="#f1f1f1"/>
+
+
+        <TextView
+            android:id="@+id/qrfk_mes_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码：13263694852"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#969696"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/qrfk_mes_et"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:hint="请输入验证码"
+                android:gravity="center"
+                android:background="@drawable/qrfk_kuang"/>
+
+            <Button
+                android:id="@+id/qrfk_mes_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="获取验证码"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:background="@mipmap/jianbianse_bac"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qrfk_mes_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/jianbianse_bac"
+            android:text="提交并确认付款"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

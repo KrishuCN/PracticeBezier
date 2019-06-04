@@ -1,0 +1,276 @@
+<resources>
+    <string name="app_name">时间财富</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中...</string>
+
+    <!--登录-->
+    <string name="fast_login">其他账号快速登录</string>
+    <string name="login_forget_pw">忘记密码？</string>
+
+    <!--綜合排序-->
+
+    <!--注册-->
+    <string name="sign_up_text1">我们已发送验证码到您的手机</string>
+    <string name="sign_up_text1_1">我们将发送验证码到您的手机</string>
+    <string name="sign_up_text2">手机号码</string>
+    <string name="sign_up_text3">请填写手机号码</string>
+    <string name="sign_up_text4">已有账号?  </string>
+    <string name="sign_up_text5">登 录</string>
+    <string name="sign_up_text6">验证码</string>
+    <string name="sign_up_text7">设置密码</string>
+    <string name="sign_up_text8">确认密码</string>
+    <string name="sign_up_hit_text1">短信验证码</string>
+    <string name="sign_up_hit_text2">6–16位字母、数字组合</string>
+    <string name="sign_up_hit_text3">再次填写密码</string>
+    <string name="sign_up_next">下一步</string>
+    <string name="sign_up">注 册</string>
+
+    <!--修改密碼-->
+    <string name="xgmm_jmm_hint">请输入您以前的密码</string>
+    <string name="xgmm_xmm_hint">请输入您的新密码(6–20位字母、数字组合)</string>
+    <string name="xgmm_qrmm_hint">请确认输入您的新密码</string>
+    <string name="xgmm_qrxg">确认修改</string>
+
+
+    <!--我的店铺-->
+    <string name="myshop_change">确定修改</string>
+
+
+    <!--绑定手机-->
+    <string name="bindingMobile_hit">输入您的手机号</string>
+    <string name="bindingMobile_info">目前只支持绑定国内手机号。绑定手机号后，您可以使用手机号直接登录时间财富网。时间财富网也会将重要信息（如支付/提现/选稿/中标）通过短信通知您。我们不会将您的手机号码泄露给第三方。</string>
+
+
+    <!--手机验证-->
+    <string name="bindingMobile_yanzheng_hit">输入验证码</string>
+    <string name="bindingMobile_yanzheng_cxhq">获取验证码</string>
+    <string name="bindingMobile_yanzheng_wc">提  交</string>
+    <string name="bindingMobile_yanzheng_ts">点击完成就直接跳转到编辑项目页</string>
+
+    <!--银行卡绑定-->
+    <string name="bank">银行名称:</string>
+    <string name="banks">请输入银行名称</string>
+    <string name="bankss">注:银行将收取百分之一的手续费</string>
+    <string name="bank_one">具体开户行:</string>
+    <string name="banks_one">请输入具体开户行</string>
+    <string name="bankss_one">如：四川成都蜀都大道支行\n（其他银行需填写具体银行名称，具体到支行）</string>
+    <string name="bank_tw">开户户名:</string>
+    <string name="banks_tw">请输入你的名字</string>
+    <string name="bankss_tw">注:此开户名与实名认证一致，如需修改，请联系客服</string>
+    <string name="bank_th">卡号或账号:</string>
+    <string name="banks_th">请输入正确的卡号或账号</string>
+    <string name="bankss_th">注:为保证你的资金安全，以上信息一经填写不可轻易更改</string>
+    <string name="bank_email">验证码将发送到你绑定的邮箱中，请注意查收</string>
+    <string name="bank_sure">确定提交</string>
+
+    <!--充值-->
+    <string name="cz_hym">用户名：</string>
+    <string name="cz_czje">充值金额：</string>
+    <string name="cz_qrcz">确认充值</string>
+    <string name="cz_y">元</string>
+
+    <!--付款页面-->
+    <string name="fk_xztgfs">选择支付方式</string>
+    <string name="fk_ts">1.托管的赏金会冻结在您的账户中，服务商完成工作且您验收完毕后才会支付给对方，请放心托管。\n2.在您托管赏金后，服务商才会开始为您工作。</string>
+
+
+    <!--提现-->
+    <string name="accout_blance">账户余额</string>
+    <string name="effect_mon">提现金额</string>
+    <string name="sure_effect">确认</string>
+
+    <!--登陆页面-->
+    <string name="login_pw_hit">登陆密码</string>
+
+    <!--温馨提示-->
+    <string name="prompt">温馨提示:</string>
+    <string name="prompt_blance">* 余额需在50元及以上可提交办理</string>
+    <string name="prompt_time">* 用户提交提现申请后，会于每周二，周五统一办理当天之前的提现;</string>
+    <string name="prompt_mon">* 申请账户提取现金的用户需自行承担由银行收取的转账、汇兑手续费;收费比例统一为1%，最低1元;</string>
+    <string name="prompt_montwo">* 若用户充值后由于种种原因未进行任何消费而提现，将加收1%手续费;</string>
+    <string name="prompt_phone">* 如果出现任何问题，请给管理员联系，电话：028-87858680.</string>
+
+    <!--申请提现所需要满足的条件-->
+    <string name="verification">申请提现需满足以下条件:</string>
+    <string name="verification_no"> 请点击验证</string>
+    <string name="verification_name">实名认证:</string>
+    <string name="verification_email">邮箱认证:</string>
+    <string name="verification_bank">银行账号:</string>
+
+    <!--参与的项目-->
+    <string name="cydxm_cydxm">参与的项目</string>
+    <string name="cydxm_qb">全部</string>
+    <string name="cydxm_ybx">悬赏</string>
+    <string name="cydxm_yzb">招标</string>
+    <string name="cydxm_bhg">计件</string>
+    <string name="cydxm_scdfw">雇佣</string>
+    <string name="cydxm_dtg">进行中</string>
+    <string name="cydxm_dqr">已完成</string>
+    <string name="cydxm_dfk">待付款</string>
+    <string name="cydxm_dpj">待评价</string>
+
+
+    //开通店铺
+    <string name="shop_leix">店铺类型:</string>
+    <string name="shop_name">店铺名称:</string>
+    <string name="shop_describe">店铺描述:</string>
+    <string name="shop_skillselect">技能选择:</string>
+    <string name="shop_phone">手机号码:</string>
+    <string name="shop_nowshop">立即开店</string>
+    <string name="shop_addrees">地址:</string>
+    <string name="shop_delete">>删除</string>
+    <string name="shop_personal">个人</string>
+    <string name="shop_enterprise">企业</string>
+    <string name="shop_enterpr_gone">工作室</string>
+    <string name="shop_skill">可选技能</string>
+    <string name="skill_queding">确 定 </string>
+
+
+    //出售服务
+    <string name="sell_service">温馨提示:新颖的服务标题，丰富的服务描述，能为您增加服务被购买的机会。</string>
+    <string name="sell_lb">选择服务类别:</string>
+    <string name="sell_title">标 题</string>
+    <string name="sell_moneny">价 格</string>
+    <string name="sell_hint">电商logo设计 原创作品 免费修改</string>
+    <string name="sell_hintmon">请输入价格</string>
+    <string name="sell_sall">服务详情</string>
+    <string name="sell_num">/300</string>
+    <string name="sell_commit">确定提交</string>
+    <string name="sell_hinte">请输入你的描述</string>
+    <string name="sell_xg">《修改》</string>
+    <string name="sell_xg1">>></string>
+
+    <!--店铺详情-->
+    <string name="shop_xq_wczl">完成质量：</string>
+    <string name="shop_xq_gzsd">工作速度：</string>
+    <string name="shop_xq_fwtd">服务态度：</string>
+    <string name="shop_xq_scly">擅长技能：</string>
+    <string name="shop_xq_csfw">出售服务</string>
+    <string name="shop_xq_cgal">作品案例</string>
+    <string name="shop_xq_dpxq">店铺详情</string>
+    <string name="shop_xq_by">本月</string>
+    <string name="shop_xq_sy">上月</string>
+    <string name="shop_xq_cjs">成交数</string>
+    <string name="shop_xq_cje">成交额</string>
+    <string name="shop_xq_hpl">好评率</string>
+    <string name="shop_xq_ckgdpl">查看更多评论></string>
+    <string name="shop_xq_fwsjs">服务商介绍</string>
+
+    <!--服务详情-->
+    <string name="fwxq_yj">原价：</string>
+    <string name="fwxq_xj">现价：</string>
+    <string name="fwxq_sycj">近三月成交：</string>
+    <string name="fwxq_fwxq">服务详情</string>
+    <string name="fwxq_pj">评价</string>
+    <string name="fwxq_lxt">联系TA</string>
+    <string name="fwxq_gyt">雇佣TA</string>
+    <string name="fwxq_ljgm">立即购买</string>
+
+    <!--发布需求-->
+    <string name="fbxq_msxq">描述需求</string>
+    <string name="fbxq_ts1">请描述您的需求</string>
+    <string name="fbxq_ts2">不知道怎么发？让客服帮助您</string>
+    <string name="fbxq_lm">需求类目</string>
+    <string name="fbxq_ys">需求预算</string>
+    <string name="fbxq_dj">单 价</string>
+    <string name="fbxq_dj_hint">单价最低不得低于0.3元</string>
+    <string name="fbxq_js">件 数</string>
+    <string name="fbxq_tj">提交</string>
+    <string name="fbxq_lxfs">手机号码</string>
+    <string name="fbxq_ts">亲,赶快提交方案吧！</string>
+    <string name="fbxq_ts3">*   仅限jpg,gif,png格式图片，文件大小在2mb以内，
+否则可能会导致上传失败。\n
+    *   cdr、psd、等其他格式的源文件请在pc端上传。</string>
+
+
+    <!--雇佣-->
+    <string name="gy_je">金额</string>
+    <string name="gy_pho">电话</string>
+
+
+    <!--付款确认-->
+
+    <!--任务详情-->
+    <string name="rwxq_xs">悬赏</string>
+    <string name="rwxq_zb">招标</string>
+    <string name="rwxq_jj">计件</string>
+    <string name="rwxq_gy">雇佣</string>
+    <string name="rwxq">任务详情</string>
+    <string name="rwxq_vip">优质项目</string>
+    <string name="rwxq_syfa">所有方案</string>
+    <string name="rwxq_bncy">报名参与</string>
+
+
+    <!--搜索页面-->
+
+    <string name="search_zb">招标</string>
+    <string name="search_xs">悬赏</string>
+    <string name="search_jj">计件</string>
+    <string name="search_qb">全部</string>
+
+
+    <!--订单详情-->
+    <string name="ddxq_jtyq">具体要求：</string>
+    <string name="ddxq_wsxq">完善需求</string>
+    <string name="ddxq_tgsj">托管赏金</string>
+    <string name="ddxq_scxq">删除需求</string>
+    <string name="ddxq">订单详情</string>
+    <string name="ddxq_ts">放心托管赏金，吸引服务商参与</string>
+
+
+    <!--VIP中心-->
+    <string name="vip_tishi1">尊敬的威客你好,你还没有购买VIP,</string>
+    <string name="vip_tishi2">点击购买</string>
+    <string name="vip_tishi3">！享受至高服务</string>
+    <string name="vip_grad">VIP等级：</string>
+    <string name="vip_add_vip">加入VIP会员</string>
+    <string name="vip_rennew">\t[续费]</string>
+    <string name="vip_sell_record">VIP购买记录</string>
+    <string name="vip_recommend">推荐项目</string>
+    <string name="vip_recommend1">VIP客户享受推荐项目</string>
+    <string name="vip_hight">优质项目库</string>
+    <string name="vip_hight1">众多的优质项目等你挑选</string>
+    <string name="vip_city_vide">同城匹配</string>
+    <string name="vip_city_vide1">帮助你发现周边的客户资源</string>
+    <string name="vip_sell_see">查看你的购买记录</string>
+
+
+    <!--VIP购买中心-->
+    <string name="purchase_jg">金冠服务商</string>
+    <string name="purchase_jgmoneny">56800元/年</string>
+    <string name="purchase_jgms">雇佣全免-招标全免-30天广告位</string>
+    <string name="purchase_hg">皇冠服务商</string>
+    <string name="purchase_hgmoneny">26800元/年</string>
+    <string name="purchase_hgms">雇佣全免-招标佣金3%-15天广告位</string>
+    <string name="purchase_zs">钻石服务商</string>
+    <string name="purchase_zsmoneny">13800元/年</string>
+    <string name="purchase_zsms">雇佣全免-招标佣金4%-7天广告位</string>
+    <string name="purchase_zfje">支付金额:\t</string>
+    <string name="purchase_fwxy">服务协议</string>
+    <string name="purchase_z1">专属VIP的图标,能力与实力的象征,更易获得雇主的青睐</string>
+    <string name="purchase_z">VIP身份标志</string>
+    <string name="purchase_y2">更加专业的店铺展示,充分展示你的专业能力</string>
+    <string name="purchase_y">专业店铺展示</string>
+    <string name="purchase_s3">自由定制所在城市任务分类,任务信息专属匹配</string>
+    <string name="purchase_s">同城任务匹配</string>
+    <string name="purchase_as">首页黄金推荐位独享,栏目推荐位独享,让更多订单找上门</string>
+    <string name="purchase_a">网站广告位推广</string>
+    <string name="purchase_b5">专属客服一对一服务,实时解决你的各种问题</string>
+    <string name="purchase_b">一对一专属服务</string>
+    <string name="purchase_d6">通过微信,微博,移动客户端，为你提供全方位服务</string>
+    <string name="purchase_d">多平台推广</string>
+
+
+    <!--VIP服务商-->
+   <string name="vip_welcome_back">欢迎回来</string>
+    <string name="vip_company_name">壹兆品牌策划</string>
+    <string name="vip_company_balance">余额</string>
+    <string name="vip_company_push_amount">推送量</string>
+    <string name="vip_company_follow_up">足迹</string>
+    <string name="vip_company_time">VIP到期时间</string>
+    <string name="vip_push_project">推送项目</string>
+
+    <!--提示相关-->
+    <string name="net_error">网络异常,请稍后重试</string>
+</resources>

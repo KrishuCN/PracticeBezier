@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/width10"
+        android:text="最多只能在一个大类里选择5个以内的小类"
+        android:textColor="#ff6600" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/colorbg"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/class1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/class2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:paddingTop="@dimen/padding10">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingLeft="@dimen/padding20"
+        android:paddingRight="@dimen/padding20"
+        android:paddingTop="@dimen/padding10"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/skill_queding"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorbg7"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skill_queding"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_font_8" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

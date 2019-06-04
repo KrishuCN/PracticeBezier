@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding16"
+                android:text="@string/fbxq_ts"
+                android:textColor="@color/text_color_10"
+                android:textSize="@dimen/text_font_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:background="@drawable/border_radius_all1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/cy_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin5"
+                    android:background="@drawable/edti_text_bg"
+                    android:gravity="left|top"
+                    android:hint="输入你要提交的内容"
+                    android:minLines="10"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorhit"
+                    android:textSize="@dimen/text_font_6" />
+
+                <chen.vike.c680.views.MyGridView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="9"></chen.vike.c680.views.MyGridView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding5">
+
+                <ImageView
+                    android:id="@+id/xq_fujian"
+                    android:layout_width="@dimen/width25"
+                    android:layout_height="@dimen/height25"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_104" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/fengexian" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/height3"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding5"
+                android:text="@string/fbxq_ts3"
+                android:textColor="@color/colorhit"
+                android:textSize="@dimen/text_font_2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/control"
+        style="@style/CustomTextButton_1"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:text="提交参与"
+        android:textSize="@dimen/text_font_6" />
+</FrameLayout>

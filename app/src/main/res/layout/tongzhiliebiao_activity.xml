@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/yuanjiaokuang"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tongzhi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证审核提醒"
+        android:textColor="#0a0a0a"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tongzhi_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="2月6日"
+        android:textColor="#a5a5a5"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tongzhi_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好，我们已收到您上传的身份证资料"
+        android:textColor="#2a2a2a"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/huixian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#f3f3f3"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/xiangqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textColor="#1a1a1a"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/you_jiantou" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

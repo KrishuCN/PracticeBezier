@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/line"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/line"
+        android:orientation="vertical"
+        android:padding="@dimen/padding16">
+
+        <ImageView
+            android:id="@+id/cyLogo"
+            android:layout_width="@dimen/width70"
+            android:layout_height="@dimen/width70"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/cyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin2"
+            android:layout_toEndOf="@+id/cyLogo"
+            android:layout_toRightOf="@+id/cyLogo"
+            android:drawablePadding="@dimen/padding10"
+            android:text="百分之一工作室"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_4" />
+
+
+        <TextView
+            android:id="@+id/cyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cyLogo"
+            android:layout_alignLeft="@+id/cyTitle"
+            android:layout_marginBottom="@dimen/margin2"
+            android:text="2015-3-1参与"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_2" />
+
+        <TextView
+            android:id="@+id/cyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cyTitle"
+            android:layout_below="@+id/cyTitle"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/zb"
+            android:src="@mipmap/zb"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/cyTitle" />
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cyTitle"
+            android:layout_alignStart="@+id/cyTitle"
+            android:layout_below="@+id/cyTitle"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/shop_vip_dj_bg"
+            android:text="皇冠三级"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_0" />
+
+        <ImageView
+            android:id="@+id/vip_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/grade"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_toEndOf="@+id/grade"
+            android:layout_toRightOf="@+id/grade"
+            android:src="@mipmap/vipa5" />
+
+        <TextView
+            android:id="@+id/mContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cyLogo"
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@drawable/text_bg"
+            android:gravity="center_vertical"
+            android:text="New Text"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_4" />
+
+    </RelativeLayout>
+
+</LinearLayout>

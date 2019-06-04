@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:mContext="chen.vike.c680.activity.RechargeActivity">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="4dp"
+       android:background="@color/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding16">
+
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="余    额："
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_6" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_toEndOf="@+id/textView16"
+            android:layout_toRightOf="@+id/textView16"
+            android:textColor="@color/text_color_10"
+            android:textSize="@dimen/text_font_6"
+            tools:text="n" />
+
+        <TextView
+            android:id="@+id/now_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView37"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_toEndOf="@+id/textView37"
+            android:layout_toRightOf="@+id/textView37"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/text_font_6"
+            tools:text="d" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView37"
+            android:layout_alignStart="@+id/textView37"
+            android:layout_marginTop="@dimen/margin5"
+            android:text="@string/cz_hym"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_6" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height5"
+        android:background="@color/fengexian" />
+
+    <LinearLayout
+        android:id="@+id/qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fengexian"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="@string/cz_czje"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_6" />
+
+            <EditText
+                android:id="@+id/jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/text1"
+                android:layout_toRightOf="@+id/text1"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="输入充值金额（整数）"
+                android:inputType="number"
+                android:padding="@dimen/padding5"
+                android:singleLine="true"
+                android:textColorHint="@color/colorhit"
+                android:textSize="@dimen/text_font_6" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/cz_y"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_6" />
+        </RelativeLayout>
+        <chen.vike.c680.views.MyGridView
+            android:id="@+id/chongzhi_jine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:numColumns="4"
+            android:verticalSpacing="8dp" />
+
+        <LinearLayout
+            android:id="@+id/qrcz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin50"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16">
+
+            <Button
+                android:id="@+id/recharge_bt"
+                style="@style/CustomTextButton1"
+                android:layout_width="match_parent"
+                android:text="@string/cz_qrcz" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="@dimen/padding16"-->
+                <!--android:paddingLeft="@dimen/padding16"-->
+                <!--android:paddingTop="@dimen/padding16"-->
+                <!--android:text="@string/cz_czje"-->
+                <!--android:textColor="@color/colorText"-->
+                <!--android:textSize="@dimen/text_font_6" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/money"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/text_color_2"-->
+                <!--android:textSize="@dimen/text_font_6" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/margin5"-->
+            <!--android:background="@color/fengexian" />-->
+
+
+</LinearLayout>

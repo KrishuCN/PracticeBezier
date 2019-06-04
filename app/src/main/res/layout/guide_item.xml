@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/guide_3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!--因为图片尺寸有问题，所以用的center_corp属性拉伸，
+    因此和预览图不一样-->
+    <Button
+        android:id="@+id/bt_yin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="立即体验"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_touming_back" />
+
+
+</RelativeLayout>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding16"
+            android:text="@string/fbxq_ts1"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_6" />
+
+        <EditText
+            android:id="@+id/xq_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="top|left"
+            android:hint="如：我需要LOGO设计"
+            android:minLines="10"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding10"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding5"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+
+        <chen.vike.c680.views.MyGridView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:columnWidth="@dimen/width10"
+            android:numColumns="9"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10">
+
+            <ImageView
+                android:id="@+id/xq_fujian"
+                android:layout_width="@dimen/width25"
+                android:layout_height="@dimen/height25"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_104" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:text="@string/fbxq_lm"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_4" />
+
+            <TextView
+                android:layout_width="@dimen/line"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin2"
+                android:layout_marginTop="@dimen/margin2"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/fbxq_lm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:text="请选择发布需求的类目"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/fjj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:text="@string/fbxq_ys"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_4" />
+
+            <TextView
+                android:layout_width="@dimen/line"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin2"
+                android:layout_marginTop="@dimen/margin2"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/fbxq_ys"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:background="@drawable/edti_text_bg"
+                android:gravity="center_vertical"
+                android:hint="输入您觉得合适的价格(整数)"
+                android:inputType="number"
+                android:maxEms="10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:textColorHint="@color/colorhit"
+                android:textSize="@dimen/text_font_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:paddingTop="@dimen/padding10"
+                    android:text="@string/fbxq_dj"
+                    android:textColor="@color/colorInfo"
+                    android:textSize="@dimen/text_font_4" />
+
+                <TextView
+                    android:layout_width="@dimen/line"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin2"
+                    android:layout_marginTop="@dimen/margin2"
+                    android:background="@color/line" />
+
+                <EditText
+                    android:id="@+id/fbxq_dj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/edti_text_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fbxq_dj_hint"
+                    android:inputType="numberDecimal"
+                    android:maxEms="10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:textColorHint="@color/text_color_1"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:paddingTop="@dimen/padding10"
+                    android:text="@string/fbxq_js"
+                    android:textColor="@color/colorInfo"
+                    android:textSize="@dimen/text_font_4" />
+
+                <TextView
+                    android:layout_width="@dimen/line"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin2"
+                    android:layout_marginTop="@dimen/margin2"
+                    android:background="@color/line" />
+
+                <EditText
+                    android:id="@+id/fbxq_js"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/edti_text_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您需要的件数"
+                    android:inputType="number"
+                    android:maxEms="10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:textColorHint="@color/text_color_1"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fabu_ts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding8"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding8"
+                android:textColor="@color/text_color_12"
+                android:textSize="@dimen/text_font_2"
+                android:visibility="gone"
+                tools:text="金额：43元+10元(项目额低于50元时需支付的发布费)" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:text="@string/fbxq_lxfs"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_4" />
+
+            <TextView
+                android:layout_width="@dimen/line"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin2"
+                android:layout_marginTop="@dimen/margin2"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/fbxq_sjhm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:background="@drawable/edti_text_bg"
+                android:gravity="center_vertical"
+                android:hint="输入您的手机号码"
+                android:inputType="phone"
+                android:maxEms="10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:textColorHint="@color/colorhit"
+                android:textSize="@dimen/text_font_6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/ll_xs_and_zb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:text="类型"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_4" />
+
+            <TextView
+                android:layout_width="@dimen/line"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin2"
+                android:layout_marginTop="@dimen/margin2"
+                android:background="@color/line" />
+
+            <RadioGroup
+                android:id="@+id/xs_zb_rg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/xs_zb_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/xs_zb_xuan1"
+                    android:drawablePadding="5dp"
+                    android:text="悬赏" />
+
+                <RadioButton
+                    android:id="@+id/xs_zb_rb1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/xs_zb_xuan1"
+                    android:drawablePadding="5dp"
+                    android:text="招标" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/control"
+            style="@style/CustomTextButton"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin30"
+            android:text="@string/fbxq_tj" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line"
+                android:layout_weight="0.25"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:text="@string/fbxq_ts2"
+                android:textSize="@dimen/login_font_0" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line"
+                android:layout_weight="0.25"
+                android:background="@color/colorLine" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fbxq_lxfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin10"
+            android:src="@mipmap/icon_121" />
+
+    </LinearLayout>
+
+</ScrollView>

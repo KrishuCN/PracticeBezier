@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/guzhu_logo_img" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:layout_gravity="center"
+        android:background="@drawable/sousuokuang"
+        android:drawableLeft="@mipmap/guzhu_sousuo"
+        android:gravity="center"
+        android:text="请输入您的需求相关信息"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/text_font_3" />
+
+    <ImageView
+        android:id="@+id/guzhu_help"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/guzhu_help_img" />
+
+</LinearLayout>

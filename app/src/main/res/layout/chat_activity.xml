@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+    <ImageView
+        android:id="@+id/action_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/page_back" />
+
+    <TextView
+        android:id="@+id/action_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="服务商专栏"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/bar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/padding50"
+        android:paddingRight="@dimen/padding16" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--#e3e3e3-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chat_srl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f5f5f5"
+        android:layout_weight="1">
+
+
+        <ListView
+            android:id="@+id/chat_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0000"
+            android:listSelector="#0000"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#f1f1f1f1">
+
+        <!--<EditText-->
+            <!--android:id="@+id/chat_et"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:maxLines="10"-->
+            <!--android:paddingLeft="16dp" />-->
+        <EditText
+            android:id="@+id/chat_et"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="center|start"
+            android:inputType="textNoSuggestions"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/chat_bt"
+            style="@style/CustomTextButton_2"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="发送" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

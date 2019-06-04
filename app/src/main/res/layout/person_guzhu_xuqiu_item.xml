@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xuqiu_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fabu_all"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding16"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_6"
+            tools:text="sdfjslkdfjldsfdslfsdl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding5">
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_4"
+                tools:text="悬赏：2000元" />
+
+            <TextView
+                android:id="@+id/tbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:drawablePadding="@dimen/padding5"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_font_4"
+                android:singleLine="true"
+                tools:text="15投标" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10">
+
+            <TextView
+                android:id="@+id/item_zt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/text_font_2"
+                tools:text="未审核/已付定金" />
+
+            <Button
+                android:id="@+id/contro"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:layout_toLeftOf="@id/control"
+                android:layout_marginRight="16dp"
+                android:textSize="@dimen/text_font_3"
+                android:background="@drawable/person_guzhu_xuqiu_btn_bg"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="托管赏金"
+                android:textColor="#909090"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/control"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height32"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:background="@drawable/person_guzhu_xuqiu_btn_bg"
+                android:textSize="@dimen/text_font_3"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                style="?android:attr/borderlessButtonStyle"
+                 android:text="托管赏金" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+</LinearLayout>

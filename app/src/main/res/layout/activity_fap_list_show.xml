@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:id="@+id/fapiao_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/page_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="发票详情"/>
+        <TextView
+            android:id="@+id/fapiao_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:clickable="true"
+            android:text="完成"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/line">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="11sp"
+            android:textColor="#999999"
+            android:text="温馨提示：网站开具商标发票税点为8%，开票金额包含税点金额"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="发票抬头"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/fapiao_taitou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="请输入发票抬头"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="纳税人识别号"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/naishui_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入纳税人识别号"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="发票内容"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/fapaio_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入发票内容"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/line">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="发票邮寄信息"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="收件人"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/shoujian_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入收件人"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="收件地址"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/shoujian_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入收件地址"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="邮政编码"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/email_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入邮政编码"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="联系电话"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/lianxi_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint="输入联系电话"
+            android:inputType="phone"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="物流信息"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/wuli_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:inputType="phone"
+            android:maxEms="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:text="申请时间"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin2"
+            android:layout_marginTop="@dimen/margin2"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/shenqing_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+
+</LinearLayout>

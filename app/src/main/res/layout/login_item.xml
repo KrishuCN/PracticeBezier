@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/zhanghao_login_show"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/login_item_back"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1.65"
+             android:background="@drawable/login_item_back"
+             android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/loginzhangimgh" />
+         </RelativeLayout>
+            <EditText
+                android:id="@+id/input_edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.35"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="电话号码/用户名"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#2486fc" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#1b63b9" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1.65"
+              android:background="@drawable/login_item_back"
+              android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/loginpasswordimg" />
+          </RelativeLayout>
+
+            <EditText
+                android:id="@+id/input_edit_psw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.35"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

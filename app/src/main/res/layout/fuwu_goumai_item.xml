@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+  <LinearLayout
+      android:id="@+id/fuwu_tanc_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      android:background="@color/line">
+      <TextView
+          android:id="@+id/guyong_goumai_title"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:gravity="center_vertical"
+          android:layout_marginLeft="16dp"
+          android:textSize="16sp"
+          android:textColor="#454545"
+          android:text="雇佣: 比尔控件设计"/>
+  </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tanc_jine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="@string/gy_je"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_6" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="@dimen/line"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/fbxq_ys"
+                android:layout_toStartOf="@+id/fbxq_ys"
+                android:background="@color/line2" />
+
+            <EditText
+                android:id="@+id/fbxq_ys"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView29"
+                android:layout_toRightOf="@+id/textView29"
+                android:background="@drawable/edit_bg_color"
+                android:ems="8"
+                android:gravity="center_vertical"
+                android:hint="请输入金额"
+                android:inputType="number"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:textSize="@dimen/text_font_4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/fbxq_ys"
+                android:layout_toRightOf="@+id/fbxq_ys"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:paddingTop="@dimen/padding10"
+                android:text="元"
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_6" />
+        </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/xuqiumiaosu_taocan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:paddingBottom="@dimen/padding10"
+               android:paddingLeft="@dimen/padding16"
+               android:paddingRight="@dimen/padding10"
+               android:paddingTop="@dimen/padding10"
+               android:text="需求描述"
+               android:textColor="@color/colorInfo"
+               android:textSize="@dimen/text_font_6" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="70dp"
+                   android:layout_marginLeft="53dp"
+                   android:background="@drawable/edit_bg_color"
+                   android:orientation="horizontal">
+               <EditText
+                   android:id="@+id/fabu_taocan_xuqiu_miaosu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:ems="30"
+                   android:minLines="4"
+                   android:background="@null"
+                   android:gravity="center_vertical"
+                   android:hint="请输入你的描述30字以内"
+                   android:paddingRight="@dimen/padding16"
+                   android:textSize="@dimen/text_font_4"
+                    />
+               </LinearLayout>
+           </LinearLayout>
+       </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:text="@string/gy_pho"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_6" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="@dimen/line"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fbxq_phone"
+            android:layout_toStartOf="@+id/fbxq_phone"
+            android:background="@color/line2" />
+
+        <EditText
+            android:id="@+id/fbxq_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_bg_color"
+            android:ems="15"
+            android:gravity="center_vertical"
+            android:hint="请输入你的手机号"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:textSize="@dimen/text_font_4"
+            android:maxLength="11"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@+id/textView31"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:layout_toEndOf="@+id/textView31" />
+
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/fuwu_goumai_enter"
+            style="@style/CustomTextButton"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin16"
+            android:background="@drawable/btn_demand_bg"
+            android:text="确认雇佣"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

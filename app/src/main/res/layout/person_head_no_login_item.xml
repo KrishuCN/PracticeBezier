@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/person_head_no_login"
+    android:visibility="gone">
+    <LinearLayout
+        android:id="@+id/person_back_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/person_two_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+                <Button
+                    android:id="@+id/person_setting"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/shezhi"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <Button
+                android:id="@+id/person_head_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/person_button_t_style"
+                android:text="立即登录"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/person_qiandao_text_nologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="+1"
+                android:textColor="@color/vip_red"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

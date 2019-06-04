@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="55dp"
+        android:layout_height="40dp">
+
+        <chen.vike.c680.views.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/touxiang_message" />
+
+        <TextView
+            android:id="@+id/tv_yuandian1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/yuan"
+            android:text="99+"
+            android:layout_marginLeft="28dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Friady"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="哈哈，一个和尚有水喝，两个和尚挑水喝，三个和尚没水喝"
+            android:textColor="@color/text_color_1"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="2017-2-27"
+        android:textColor="@color/text_color_1"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

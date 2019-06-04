@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cy_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edti_text_bg"
+            android:gravity="left|top"
+            android:hint="输入您方案说明……"
+            android:minLines="10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorhit"
+            android:textSize="@dimen/text_font_6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:background="@color/white"
+            android:paddingTop="@dimen/padding5">
+
+            <EditText
+                android:id="@+id/mMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edti_text_bg"
+                android:hint="请输入您的报价（金额为整数）"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorhit"
+                android:textSize="@dimen/text_font_6"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:maxEms="16"
+                android:layout_toRightOf="@+id/textView31"
+                android:layout_toEndOf="@+id/textView31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额："
+                android:textColor="@color/colorInfo"
+                android:id="@+id/textView31"
+                android:textSize="@dimen/text_font_6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:id="@+id/textView33"
+                android:textSize="@dimen/text_font_6"
+                android:textColor="@color/colorInfo"
+                android:layout_alignTop="@+id/textView31"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:background="@color/white"
+            android:paddingTop="@dimen/padding5">
+
+            <EditText
+                android:id="@+id/mTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edti_text_bg"
+                android:hint="请输入完成周期"
+                android:inputType="number"
+                android:maxEms="16"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding10"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorhit"
+                android:textSize="@dimen/text_font_6"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView311"
+                android:layout_toEndOf="@+id/textView311" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周期："
+                android:textColor="@color/colorInfo"
+                android:id="@+id/textView311"
+                android:textSize="@dimen/text_font_6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:id="@+id/textView331"
+                android:textSize="@dimen/text_font_6"
+                android:textColor="@color/colorInfo"
+                android:layout_alignTop="@+id/textView311"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地区："
+                android:textColor="@color/colorInfo"
+                android:textSize="@dimen/text_font_6"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_radius_all"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding5">
+
+                <Spinner
+                    android:id="@+id/province_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:background="@drawable/border_radius_all"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding5"
+                android:paddingLeft="@dimen/padding16"
+                android:paddingRight="@dimen/padding16"
+                android:paddingTop="@dimen/padding5">
+
+                <Spinner
+                    android:id="@+id/city_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/control"
+        style="@style/CustomTextButton_1"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:text="提交报价"
+        android:textSize="@dimen/text_font_6" />
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="62dp">
+
+        <chen.vike.c680.views.EmptySwipeRefreshLayout
+            android:id="@+id/swipe_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:choiceMode="singleChoice"
+                    android:divider="@color/line2"
+                    android:dividerHeight="0.1dp"
+                    android:scrollbars="none" />
+
+                <include layout="@layout/view_mes_header"
+                    android:id="@+id/view_no"></include>
+
+
+            </LinearLayout>
+
+
+        </chen.vike.c680.views.EmptySwipeRefreshLayout>
+
+
+    </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@mipmap/jianbianse_bac">
+      <ImageView
+          android:id="@+id/back_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="28dp"
+          android:src="@mipmap/back"
+          android:layout_marginLeft="5dp"/>
+      <TextView
+          android:id="@+id/textView9"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:gravity="center"
+          android:layout_centerHorizontal="true"
+          android:text="消息"
+          android:textColor="@color/white"
+          android:textSize="22sp" />
+  </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/message_lxkf"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="120dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/message_lxkf"
+        android:visibility="gone" />
+
+
+</FrameLayout>

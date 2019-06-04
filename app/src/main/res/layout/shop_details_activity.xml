@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:mContext="chen.vike.c680.activity.GeRenZhongXinShopDetailsActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/shop">
+
+                    <ImageView
+                        android:id="@+id/shop_logo"
+                        android:layout_width="@dimen/width60"
+                        android:layout_height="@dimen/width60"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/margin20"
+                        android:layout_marginLeft="@dimen/margin16"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/image_erroe" />
+
+                    <TextView
+                        android:id="@+id/shop_xy_dj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/shop_logo"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:layout_toEndOf="@+id/shop_logo"
+                        android:layout_toRightOf="@+id/shop_logo"
+                        android:background="@drawable/shop_vip_dj_bg"
+                        android:text="皇冠三级"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_font_2" />
+
+                    <ImageView
+                        android:id="@+id/shop_vip_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/shop_xy_dj"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/shop_xy_dj"
+                        android:layout_toRightOf="@id/shop_xy_dj"
+                        android:src="@mipmap/vipa5" />
+
+                    <TextView
+                        android:id="@+id/shop_sycj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/shop_logo"
+                        android:layout_alignLeft="@+id/shop_xy_dj"
+                        android:layout_alignStart="@+id/shop_xy_dj"
+                        android:layout_marginBottom="@dimen/margin5"
+                        android:text="近三月成交10000元"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_font_2" />
+
+                    <TextView
+                        android:id="@+id/ship_cjbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/shop_sycj"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_toEndOf="@+id/shop_sycj"
+                        android:layout_toRightOf="@+id/shop_sycj"
+                        android:text="交易：100笔"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_font_2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:paddingTop="@dimen/padding10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_xq_wczl"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_font_2" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_wczl_fs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="@dimen/text_font_4"
+                            tools:text="4.98" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_wczl_zt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin2"
+                            android:background="@drawable/text_button_bg"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding2"
+                            android:paddingLeft="@dimen/padding3"
+                            android:paddingRight="@dimen/padding3"
+                            android:paddingTop="@dimen/padding2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_0"
+                            tools:text="高" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_xq_gzsd"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_font_2" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_gzsd_fs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="@dimen/text_font_2"
+                            tools:text="4.98" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_gzsd_zt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin2"
+                            android:background="@drawable/text_button_bg"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding2"
+                            android:paddingLeft="@dimen/padding3"
+                            android:paddingRight="@dimen/padding3"
+                            android:paddingTop="@dimen/padding2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_0"
+                            tools:text="高" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_xq_fwtd"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_font_2" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_fwtd_fs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="@dimen/text_font_2"
+                            tools:text="4.98" />
+
+                        <TextView
+                            android:id="@+id/shop_xq_fwtd_zt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin2"
+                            android:background="@drawable/text_button_bg"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding2"
+                            android:paddingLeft="@dimen/padding3"
+                            android:paddingRight="@dimen/padding3"
+                            android:paddingTop="@dimen/padding2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_font_0"
+                            tools:text="低" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingLeft="@dimen/padding16"
+                    android:paddingRight="@dimen/padding16"
+                    android:paddingTop="@dimen/padding10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="@dimen/height5"
+                        android:text="@string/shop_xq_scly"
+                        android:textColor="@color/colorInfo"
+                        android:textSize="@dimen/text_font_2" />
+
+                    <TextView
+                        android:id="@+id/jineng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="@dimen/height10"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_font_2" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height5"
+                    android:background="@color/colorbg" />
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/shop_xq_csfw"
+                    style="@style/CustomRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:text="@string/shop_xq_csfw"
+                    android:textSize="@dimen/text_font_6" />
+
+                <RadioButton
+                    android:id="@+id/shop_xq_cgal"
+                    style="@style/CustomRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:text="@string/shop_xq_cgal"
+                    android:textSize="@dimen/text_font_6" />
+
+                <RadioButton
+                    android:id="@+id/shop_xq_dpxq"
+                    style="@style/CustomRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:text="@string/shop_xq_dpxq"
+                    android:textSize="@dimen/text_font_6" />
+            </RadioGroup>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/height48"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height48"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/shop_xq_lx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_color_7"
+            android:gravity="center"
+            android:text="@string/fwxq_lxt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_4" />
+
+        <Button
+            android:id="@+id/shop_xq_lxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_color_2"
+            android:paddingLeft="@dimen/padding24"
+            android:paddingRight="@dimen/padding24"
+            android:text="@string/fwxq_gyt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_4" />
+    </LinearLayout>
+</FrameLayout>

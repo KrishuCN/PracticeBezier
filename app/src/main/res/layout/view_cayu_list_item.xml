@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fabu_all"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/width25"
+                android:layout_height="@dimen/width25"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin16"
+                android:src="@mipmap/image_loading" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_toEndOf="@+id/icon"
+                android:layout_toRightOf="@+id/icon"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_2"
+                tools:text="who are you" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding10"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_4"
+            tools:text="sdfjslkdfjldsfdslfsdl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding16"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingTop="@dimen/padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额："
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_2"
+
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_font_4"
+                tools:text="2000元"
+
+                />
+
+            <TextView
+                android:id="@+id/istg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/test"
+                android:textColor="@color/text_color_9"
+                android:textSize="@dimen/text_font_0"
+                tools:text="已托管" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height5"
+            android:background="@color/line" />
+
+    </LinearLayout>
+</LinearLayout>

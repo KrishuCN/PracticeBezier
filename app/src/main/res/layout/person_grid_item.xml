@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="?android:selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gv_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/person_message_img"/>
+
+    <TextView
+        android:id="@+id/gv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参与项目"
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#5e5e5e"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

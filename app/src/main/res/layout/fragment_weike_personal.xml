@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_weike_personal_head" />
+
+        <include layout="@layout/person_head_guzhu_item" />
+
+        <include layout="@layout/person_head_no_login_item" />
+
+        <include layout="@layout/fragment_weike_person_gridlist" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#e7e7e7" />
+
+        <include layout="@layout/fuwu_person_tusong" />
+
+        <include layout="@layout/guzhu_person_tusong" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3.15"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="标题"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <EditText
+                    android:id="@+id/zuopin_title"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="7.85"
+                    android:background="@drawable/edti_text_bg"
+                    android:hint="电商Logo设计"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:layout_weight="3.21"
+                        android:text="价格"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/line" />
+
+                    <EditText
+                        android:id="@+id/zuopin_price"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:layout_weight="7.05"
+                        android:background="@drawable/edti_text_bg"
+                        android:hint="请输入价格"
+                        android:phoneNumber="true"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/black"
+                        android:text="元"
+                        android:textSize="16sp" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/line" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_weight="0.95">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_weight="2.5"-->
+                        <!--android:text="状态"-->
+                        <!--android:textSize="16sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/line" />-->
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/zuopin_zhuangtai"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--android:layout_weight="7.5"></Spinner>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3.15"
+                    android:textColor="@color/black"
+                    android:text="是否中标"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <Spinner
+                    android:id="@+id/zuopin_zhuangtai"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="7.85"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1.15"
+                    android:text="类别"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <Spinner
+                    android:id="@+id/zuopin_category"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="8.85"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/line" />
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:layout_margin="15dp"
+                android:columnWidth="60dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:background="@color/white"
+                android:verticalSpacing="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+  <!--+-->
+    <Button
+        android:id="@+id/zuopin_tijiao"
+        style="@style/CustomTextButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin30"
+        android:text="确认提交"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

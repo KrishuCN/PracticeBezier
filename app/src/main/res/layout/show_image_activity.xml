@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width50"
+        android:orientation="horizontal"
+        android:background="@color/header_normal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="已选 "/>
+            <TextView
+                android:id="@+id/number_text"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=" 张"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/wancheng_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/padding24"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="完成"/>
+        </LinearLayout>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/child_grid"
+        android:padding="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dip"
+        android:gravity="center"
+        android:verticalSpacing="5dip"
+        android:columnWidth="90dip"
+        android:numColumns="auto_fit" >
+    </GridView>
+
+</LinearLayout>

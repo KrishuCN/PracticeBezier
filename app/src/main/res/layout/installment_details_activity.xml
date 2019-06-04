@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/fenqi_details_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f1f1f1"
+        android:dividerHeight="8dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/fenqi_details_qbtj"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@mipmap/jianbianse_bac"-->
+        <!--android:text="全部托管"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp" />-->
+
+
+</LinearLayout>

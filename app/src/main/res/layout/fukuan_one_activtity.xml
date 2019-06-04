@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fk_ddje"
+        android:textSize="@dimen/text_font_4"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        tools:text="订单金额：1000"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fk_ddbh"
+        android:textSize="@dimen/text_font_4"
+        android:textColor="@color/colorText"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:layout_width="match_parent"
+        tools:text="订单编号：1000"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="@dimen/text_font_4"
+        android:textColor="@color/colorText"
+        android:padding="@dimen/padding16"
+        android:layout_width="match_parent"
+        android:text="@string/fk_xztgfs"
+        android:background="@color/colorbg"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/zfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/padding10">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_alipay" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:drawableRight="@mipmap/right"
+            android:text="支付宝" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wxzf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_radius"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingTop="@dimen/padding10"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/padding10"
+        >
+
+        <ImageView
+            android:id="@+id/WeCha_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_appwx" />
+
+        <TextView
+            android:id="@+id/WeCha_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/WeCha_logo"
+            android:drawableRight="@mipmap/right"
+            android:text="微信支付" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/yezf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="@dimen/padding16"
+            android:paddingRight="@dimen/padding16"
+            android:paddingBottom="@dimen/padding10"
+            android:paddingTop="@dimen/padding10"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/padding10"
+            android:background="@drawable/border_radius"
+            >
+
+            <ImageView
+                android:id="@+id/sjcf_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_sjcf" />
+
+            <TextView
+                android:id="@+id/fk_ye_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sjcf_logo"
+                android:drawableRight="@mipmap/right"
+                android:text="余额" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding10"
+        android:paddingLeft="@dimen/padding16"
+        android:visibility="gone"
+        android:background="#fff"
+        android:text="* 500元以下可以使用微信支付,多于500暂不支持微信支付，请用支付宝或者余额支付,谢谢你的谅解. "
+        android:textColor="@color/header_normal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/fk_ts"
+        android:padding="@dimen/padding16"
+        android:background="@color/colorbg"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/height5"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/text_font_0"
+        />
+
+</LinearLayout>

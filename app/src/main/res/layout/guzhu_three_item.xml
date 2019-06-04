@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="50dp">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="按专长找人才"
+         android:textColor="@color/black"
+         android:textSize="17sp"
+         android:layout_centerInParent="true"/>
+
+ </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line2"/>
+    <chen.vike.c680.views.MyGridView
+        android:id="@+id/guzhu_rencai_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:numColumns="4"
+        android:verticalSpacing="1dp"/>
+</LinearLayout>

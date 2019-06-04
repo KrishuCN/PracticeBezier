@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/update_dianpu_diqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="所在地区"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/suozai_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text=""
+                    />
+                <ImageView
+                    android:id="@+id/guoqu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/grzx_you1" />
+            </LinearLayout>
+        </RelativeLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/line"/>
+        <RelativeLayout
+            android:id="@+id/update_dianpu_leixing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="店铺类型"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dianpu_leixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:text=""
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/grzx_you1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <RelativeLayout
+            android:id="@+id/update_dianpu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="店铺名称"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dianpu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/grzx_you1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line"/>
+        <RelativeLayout
+            android:id="@+id/open_shop_skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="技能选择"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/jineng_xuanze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/grzx_you1" />
+            </LinearLayout>
+        </RelativeLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/line"/>
+
+        <LinearLayout
+            android:id="@+id/shop_linrar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height50"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding5"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/shop_na"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_font_6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_shop_sk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:padding="@dimen/padding5"
+            android:visibility="gone">
+            <chen.vike.c680.views.MyGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4" />
+        </LinearLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:text="注：长按删除技能"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height220"
+            android:orientation="vertical"
+            android:padding="@dimen/padding5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:paddingTop="@dimen/padding10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_describe"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:padding="@dimen/padding5"
+                android:paddingRight="@dimen/padding10">
+
+                <LinearLayout
+                    android:id="@+id/foucuse_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/password_linear"
+                    android:padding="@dimen/padding8">
+
+                    <EditText
+                        android:id="@+id/shop_describle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:hint="@string/sell_hinte"
+                        android:maxLines="6"
+                        android:textColorHint="@color/section_text_color"
+                        android:textSize="@dimen/text_font_6" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/shop_nowBut"
+                style="@style/CustomTextButton"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/margin20"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="@string/myshop_change" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

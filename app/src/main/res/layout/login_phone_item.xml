@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/phone_login_show"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/login_item_back"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.65"
+                android:background="@drawable/login_item_back"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/loginphoneimg" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/input_edit_phone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="输入电话号码"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:textSize="16sp"
+                android:maxLength="11"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.85">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:background="#c7c7c7"/>
+            <TextView
+                android:id="@+id/huoqu_yanzhengm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="获取验证码"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#2486fc" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#1b63b9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.65"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_item_back"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/loginduanximg" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/input_edit_yanzhengm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.35"
+                android:layout_marginLeft="10dip"
+                android:background="#00000000"
+                android:hint="验证码"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:padding="5dip"
+                android:maxLength="6"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

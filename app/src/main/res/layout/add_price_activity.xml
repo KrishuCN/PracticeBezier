@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:gravity="center_vertical|bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingRight="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="广东名达集团logo及VI简单设计"
+            android:textColor="@color/colorInfo"
+            android:textSize="@dimen/text_font_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding10"
+        android:paddingRight="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/now_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="￥500"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/text_font_6" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="增加悬赏"
+            android:background="@drawable/border_radius_all"
+            android:ems="10"
+            android:padding="@dimen/padding5"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_1"
+            android:inputType="number"
+            android:textSize="@dimen/text_font_4" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin5"
+            android:text="元"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="提醒：加价金额不能少于项目金额的10%，本次不低于50元"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/text_font_2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding16"
+        android:paddingRight="@dimen/padding16"
+        >
+
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:background="@drawable/border_radius_all"
+            android:singleLine="true"
+            android:hint="延长时间"
+            android:textColorHint="@color/text_color_1"
+            android:padding="@dimen/padding5"
+            android:textSize="@dimen/text_font_4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="天"
+            android:layout_marginLeft="@dimen/margin5"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_font_4" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="提醒：不延长请留空,最长不超过10天"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/text_font_2" />
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/CustomTextButton"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/margin16"
+        android:layout_marginLeft="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin30"
+        android:layout_height="wrap_content"
+        android:text="确认提交"
+        />
+
+
+</LinearLayout>

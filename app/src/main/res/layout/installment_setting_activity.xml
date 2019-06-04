@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意："
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1、招标项目分期付款，最多可以分5期；请与合作的威客协商好每期的托管金额及其转款事项。"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2、请在每期的备注中注明该期的项目进展要求，及何时托管和转款等必要的依据内容，使双方合作更便捷。"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3、请按应付款金额进行设置分期金额。"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f1f1f1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/fenqi_cb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fenqi_check"
+            android:button="@null"
+            android:drawableRight="@mipmap/you_jiantou"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="分2期"
+            android:textColor="@drawable/fenqi_zi"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/fenqi_cb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fenqi_check"
+            android:button="@null"
+            android:drawableRight="@mipmap/you_jiantou"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="分3期"
+            android:textColor="@drawable/fenqi_zi"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/fenqi_cb_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fenqi_check"
+            android:button="@null"
+            android:drawableRight="@mipmap/you_jiantou"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="分4期"
+            android:textColor="@drawable/fenqi_zi"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/fenqi_cb_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fenqi_check"
+            android:button="@null"
+            android:drawableRight="@mipmap/you_jiantou"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:text="分5期"
+            android:textColor="@drawable/fenqi_zi"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fenqi_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f56433"
+        android:text="全部托管"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
